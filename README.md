@@ -1,4 +1,4 @@
-# how-to
+# how-to CentOS 7
 Disable SELinux and Disable FirewallD
 ```
 systemctl disable firewalld.service
