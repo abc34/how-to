@@ -6,7 +6,7 @@ sed -i /etc/selinux/config -r -e 's/^SELINUX=.*/SELINUX=disabled/g'
 systemctl reboot
 ```
 
-Enable ssh access user=admin by public key authentication, SELinux
+Enable/restore ssh access user=admin by public key authentication, SELinux
 ```
 chown -R admin:admin /home/admin/.ssh
 chmod 700 /home/admin/.ssh;
