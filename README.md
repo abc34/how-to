@@ -19,4 +19,12 @@ yum -y update && systemctl reboot   # Update and reboot first, to load any upgra
 yum -y install epel-release
 yum localinstall --nogpgcheck http://archive.zfsonlinux.org/epel/zfs-release.el7.noarch.rpm
 yum -y install kernel-devel zfs
-systemctl reboot```
+systemctl reboot
+```
+
+bash conditions
+```
+[ -e path/to/fileordir ] return true if fileordir exist
+[ -f path/to/fileordir ] return true if fileordir is file and exist
+[ -d path/to/fileordir ] return true if fileordir is dir and exist
+```
